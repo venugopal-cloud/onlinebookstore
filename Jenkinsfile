@@ -36,7 +36,7 @@ pipeline
             post{
                 success {
 
-                    archiveArtifacts artifact: 'target/*.war'
+                    archiveArtifacts artifacts: 'target/*.war'
                 }
             }
         }
