@@ -49,14 +49,6 @@ pipeline
             }
         }
 
-        stage('Test Results Reports'){
-
-            steps{
-
-                sh  'target/surface-reports/*xml'
-            }
-        }
-
         stage('Deploy to tomcat server'){
 
             steps{
